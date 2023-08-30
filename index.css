@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --main-color: teal;
+}
+body{
+    margin:0px;
+}
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+  min-zoom: 0.4;
+  max-zoom: 2;
+  user-zoom: fixed;
+  }
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  line-height: 1.5;
+
+}
+#bag{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    
+    gap: 20px;
+    justify-content:space-around;
+    padding: 15px;
+    margin-top: 20px;
+    padding-left: 140px;
+    
+    
+    
+  }
+  .box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:fit-content;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    color: cadetblue;
+    background-color: rgb(203, 195, 227);
+  }
+  
+  .h3{
+    font-size: 17px;
+  }
+  .box:hover{
+    cursor: pointer;
+    background-color: rgb(191, 220, 220);
+    border: 1px solid rgb(96, 6, 96);
+    zoom: 3fr;
+    
+  }
+
+#lowercase {
+  text-transform: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+ 
+}
+
+body {
+  background: #f4f4f4;
+  
+}
+
+
+#skills{
+    background-color: whitesmoke;
+    margin-top: 50px;
+    
+
+  }
+  #skills>h1{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #443dcc;
+    font-size: 35px;
+  }
+  #skills>div{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+  #skills>div>div{
+    padding: 15px 0px;
+    text-align: center;
+    background-color: rgb(203, 195, 227);
+    border-radius: 10px;
+  }
+
+section {
+  padding: 1rem 5%;
+
+}
+
+.heading {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color: #470909;
+  text-transform: uppercase;
+  
+}
+
+.heading span {
+ 
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  background: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background: #470909;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+
+
+#menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 1.5rem;
+  background: url(http://www.pixelstalk.net/wp-content/uploads/2016/04/Images-simple-wallpaper-HD.jpg);
+}
+
+
+.home .image {
+  flex: 1 1 40rem;
+  padding:40px;
+  
+}
+
+.home .image img {
+  width: 80%;
+  height: 400px;
+  margin-top: 40px;
+  border-radius: 50%;
+
+}
+
+.home .content {
+  flex: 1 1 40rem;
+}
+
+.home .content .hi {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.home .content h3 {
+  font-size: 4.5rem;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.home .content h3 span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.home .content .info {
+  font-size: 2.5rem;
+  color: #111;
+  padding: 0.5rem 0;
+}
+
+.home .content .text {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+.about .row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.about .row-1 .image {
+  flex: 1 1 25rem;
+}
+
+.about .row-1 .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row-1 .content {
+  flex: 1 1 50rem;
+}
+
+.about .row-1 .content h3 {
+  color: #333;
+  font-size: 3.5rem;
+}
+
+.about .row-1 .content p {
+  color: #666;
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container .box {
+  flex: 1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span {
+  color: var(--main-color);
+}
+
+.about .row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about .row-2 .skills {
+  flex: 1 1 40rem;
+}
+
+.about .row-2 .skills .progress {
+  padding: 1rem 0;
+}
+
+.about .row-2 .skills .progress h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  font-size: 1.7rem;
+  color: #111;
+  font-weight: 400;
+}
+
+.about .row-2 .skills .progress .bar {
+  width: 100%;
+  background: #ccc;
+  overflow: hidden;
+  height: 1rem;
+  border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span {
+  display: block;
+  height: 100%;
+  background: var(--main-color);
+  border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress:nth-child(1) .bar span {
+  width: 95%;
+}
+
+.about .row-2 .skills .progress:nth-child(2) .bar span {
+  width: 80%;
+}
+
+.about .row-2 .skills .progress:nth-child(3) .bar span {
+  width: 75%;
+}
+
+.about .row-2 .skills .progress:nth-child(4) .bar span {
+  width: 85%;
+}
+
+.about .row-2 .box-container {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about .row-2 .box-container .box {
+  flex: 1 1 15rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.about .row-2 .box-container .box:hover {
+  box-shadow: rgba(80, 232, 20, 0.35) 0px 5px 15px;
+}
+.about .row-2 .box-container .box h3 {
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
+.about .row-2 .box-container .box p {
+  color: #666;
+  font-size: 1.7rem;
+  padding-top: 0.5rem;
+}
+
+
+
+.portfolio .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.portfolio .box-container .box {
+  flex: 1 1 30rem;
+  height: 80rem;
+  overflow: hidden;
+  border: 1rem solid #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.portfolio .box-container .box img {
+  height: 45%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 0;
+}
+
+.portfolio .box-container .box:hover {
+  /* height: 45%;
+  width: 45%; */
+  background-color: #eee;
+}
+
+.portfolio .box-container .box h3 {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.portfolio .box-container .box .icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.portfolio .box-container .box .icons a {
+  display: block;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .icons a:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+
+
+.footer {
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 2.5rem;
+  text-align: center;
+  color: #666;
+  background: #fff;
+  
+}
+
+.footer span {
+  color: var(--main-color);
+}
+
+.box > img {
+  height: 70px;
+  
+}
+.skill-container {
+  text-align: center;
+}
+#contact{
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* Navbar */
+nav{
+
+  background: url(https://wallpapercave.com/wp/Cy7YPNg.jpg);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 90px;
+  margin: 0 30px;
+  padding-bottom: 30px;
+  
+}
+nav ul{
+  float: right;
+ 
+ 
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: cursive;
+  padding: 7px 13px;
+}
+
+label.logo{
+  color: white;
+  font-size: 50px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.checkButton{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.myCheckBox{
+  display: none;
+}
+
+a:hover{
+  box-shadow: 0 0 10px white;
+  background-color: white;
+  color: black;
+}
+
+/* new contact */
+
+.heading{
+ 
+  text-align: center;
+  font-size: 44px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 10px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+#contacts i{
+  /* color: rgb(126, 227, 126); */
+  font-size: 32px;
+  text-align: center;    
+  margin: auto;
+}
+#incont > div{
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid white; */
+  width: max-content;
+  /* height: 20px; */
+  margin: auto;
+  margin-top: 20px;
+}
+#incont p, #incont p{
+  font-size: 20px;
+  color: rgb(67, 66, 66);
+  line-height: 0px;
+  margin-left: 10px;
+}
+#link:hover, #git:hover, #mail:hover{
+  cursor: pointer;
+  
+}
+
+#link p:hover, #git p:hover, #mail p:hover{
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+
+/* media queries  */
+@media (max-width: 1332px) {
+  html {
+    font-size: 55%;
+  }
+  #skills>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  body {
+    padding: 0;
+  }
+
+  #menu-bars {
+    display: initial;
+  }
+
+  header {
+    left: -120%;
+  }
+
+  header.active {
+    left: 0%;
+  }
+
+  .cursor-1,
+  .cursor-2 {
+    display: none;
+  }
+  #bag{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+/* Navbar */
+.checkButton{
+  display: block;
+}
+
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(239, 232, 233);
+  top: 80px;
+  left: -100%;
+  opacity: 0.9;
+  text-align: center;
+  transition: all .5s;
+}
+
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+nav ul li a{
+  font-size: 20px;
+  color: black;
+  
+}
+
+a:hover,a.active{
+  box-shadow: 0 0 10px white;
+background-color: white;
+color: black;
+}
+
+.myCheckBox:checked ~ ul{
+  left: 0;
+}
+
+#git-cal>div>img{
+  height: fit-content;
+  width: 100%;
+}
+ 
+}
+
+@media (max-width: 450px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    width: 100%;
+  }
+  #skills>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  .experience .box-container .box {
+    padding-right: 0;
+  }
+
+#bag{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows:auto;
+}
+.myCheckBox:checked ~ ul{
+  left: 0;
+}
+
+}
+
+
+
+.project-desc {
+  font-size: 1.4rem;
+}
+
+
+#skills>div>div:hover{
+  background-color: rgba(6, 103, 177, 0.08);
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid navy;
+  border-radius: 15px;
+}
+#skills>div>div>img{
+  width: 50%;
+}
+
+#skills>div>div>h2{
+  color: rgb(3, 113, 104);
+}
+
+.image>img{
+  border-radius: 40%;
+  height: 600px;
+  width: 20%;
+}
+
+@media all and (max-width:950px) and (min-width:300px) {
+  .image>img{
+    border-radius: 40%;
+    height: 350px;
+    width: 20%;
+  }
+
+  #bag{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+    justify-content:space-around;
+    padding-left: 80px;
+     
+  }
+  .hi{
+    margin-top: 30px;
+  }
+  #portfolio p{
+    font-size: 18px;
+  }
+  #portfolio h4{
+    font-size: 18px;
+  }
+  #git-cal>div>img{
+    height: 300px;
+    width: 100%;
+  }
+}
+
+#git-cal>div>img{
+  height: fit-content;
+  width: 100%;
+}
+#git-cal>h1{
+  text-align: center;
+  font-size: 37px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #443dcc;
+}
